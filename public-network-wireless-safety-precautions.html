@@ -1,162 +1,130 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>换手机、重装系统之后：客户端与账号的恢复清单 - 特辑专栏</title>
-  <meta name="description" content="更换手机或重装系统后，如何快速恢复加速客户端与常用账号？整理一份恢复清单，包括配置、两步验证、密码管理与设备数处理。">
-  <meta name="keywords" content="公共WiFi安全, 中间人攻击防范, 恶意仿冒热点, 漫游网络防御, 流量加密隔离, 梯子工具, 商旅网络防护">
-  <link rel="canonical" href="https://runwayvpn.sbs/public-network-wireless-safety-precautions.html">
-  
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Runway">
-  <meta property="og:title" content="换手机、重装系统之后：客户端与账号的恢复清单 - 特辑专栏">
-  <meta property="og:description" content="更换手机或重装系统后，如何快速恢复加速客户端与常用账号？整理一份恢复清单，包括配置、两步验证、密码管理与设备数处理。">
-  <meta property="og:url" content="https://runwayvpn.sbs/public-network-wireless-safety-precautions.html">
-  <meta property="og:image" content="https://runwayvpn.sbs/og-preview.jpg">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Runway 特辑主页",
-        "item": "https://runwayvpn.sbs/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "特辑专栏",
-        "item": "https://runwayvpn.sbs/chronicles.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "公共无线安全指南",
-        "item": "https://runwayvpn.sbs/public-network-wireless-safety-precautions.html"
-      }
-    ]
-  }
-  </script>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤</title>
+<meta content="旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤，提供完整准备、操作核验和问题判断方法，让连接服务回到具体工作需求。" name="description"/>
+<meta content="公共WiFi安全, 中间人攻击防范, 恶意仿冒热点, 漫游网络防御, 流量加密隔离, 梯子工具, 商旅网络防护" name="keywords"/>
+<link href="https://runwayvpn.sbs/public-network-wireless-safety-precautions.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Runway" property="og:site_name"/>
+<meta content="旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤" property="og:title"/>
+<meta content="旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤，提供完整准备、操作核验和问题判断方法，让连接服务回到具体工作需求。" property="og:description"/>
+<meta content="https://runwayvpn.sbs/public-network-wireless-safety-precautions.html" property="og:url"/>
+<meta content="https://runwayvpn.sbs/og-preview.jpg" property="og:image"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Runway 特辑主页",
+      "item": "https://runwayvpn.sbs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "特辑专栏",
+      "item": "https://runwayvpn.sbs/chronicles.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤",
+      "item": "https://runwayvpn.sbs/public-network-wireless-safety-precautions.html"
+    }
+  ]
+}</script>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- 人文杂志报头 -->
-  <header class="editorial-masthead">
-    <div class="editorial-container">
-      <div class="masthead-topbar">
-        <a href="index.html" class="masthead-logo" aria-label="Runway 首页">
-          <svg viewBox="0 0 220 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21" cy="21" r="18" stroke="#8C3A27" stroke-width="2" stroke-dasharray="2 2"/>
-            <circle cx="21" cy="21" r="14" fill="#8C3A27"/>
-            <path d="M21 11V16M21 26V31M11 21H16M26 21H31" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="21" cy="21" r="2.5" fill="#FFFFFF"/>
-            <text x="50" y="30" font-family="Georgia, -apple-system, serif" font-size="25" font-weight="800" letter-spacing="3" fill="#1F2421">RUNWAY</text>
-            <text x="176" y="22" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#8C3A27">EST.2021</text>
-          </svg>
-        </a>
-
-        <!-- 桌面端杂志排版导航菜单 -->
-        <nav class="editorial-nav" aria-label="特辑篇章导航">
-          <a href="index.html#chapter-one">专线工程</a>
-          <a href="index.html#chapter-two">视界赋能</a>
-          <a href="index.html#editions">订阅读本</a>
-          <a href="index.html#reviews">读者专栏</a>
-          <a href="index.html#inquiries">答客问</a>
-          <a href="chronicles.html" style="color: var(--terracotta);">特辑专栏</a>
-        </nav>
-
-        <div class="masthead-actions">
-          <a href="index.html" class="edit-btn edit-btn-outline">返回特辑</a>
-          <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" target="_blank" rel="nofollow" class="edit-btn edit-btn-terracotta">订购全卷</a>
-        </div>
-
-        <button class="editorial-menu-toggle" id="editorialMenuToggle" aria-label="切换导航菜单" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+<!-- 人文杂志报头 -->
+<header class="editorial-masthead">
+<div class="editorial-container">
+<div class="masthead-topbar">
+<a aria-label="Runway 首页" class="masthead-logo" href="index.html">
+<svg fill="none" viewbox="0 0 220 42" xmlns="http://www.w3.org/2000/svg">
+<circle cx="21" cy="21" r="18" stroke="#8C3A27" stroke-dasharray="2 2" stroke-width="2"></circle>
+<circle cx="21" cy="21" fill="#8C3A27" r="14"></circle>
+<path d="M21 11V16M21 26V31M11 21H16M26 21H31" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5"></path>
+<circle cx="21" cy="21" fill="#FFFFFF" r="2.5"></circle>
+<text fill="#1F2421" font-family="Georgia, -apple-system, serif" font-size="25" font-weight="800" letter-spacing="3" x="50" y="30">RUNWAY</text>
+<text fill="#8C3A27" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="1" x="176" y="22">EST.2021</text>
+</svg>
+</a>
+<!-- 桌面端杂志排版导航菜单 -->
+<nav aria-label="特辑篇章导航" class="editorial-nav">
+<a href="index.html#chapter-one">专线工程</a>
+<a href="index.html#chapter-two">视界赋能</a>
+<a href="index.html#editions">订阅读本</a>
+<a href="index.html#reviews">读者专栏</a>
+<a href="index.html#inquiries">答客问</a>
+<a href="chronicles.html" style="color: var(--terracotta);">特辑专栏</a>
+</nav>
+<div class="masthead-actions">
+<a class="edit-btn edit-btn-outline" href="index.html">返回特辑</a>
+<a class="edit-btn edit-btn-terracotta" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">订购全卷</a>
+</div>
+<button aria-expanded="false" aria-label="切换导航菜单" class="editorial-menu-toggle" id="editorialMenuToggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="editorial-mobile-panel" id="editorialMobilePanel">
+<ul class="editorial-mobile-links">
+<li><a href="index.html#chapter-one"><span>第一章：真正稳定的连接</span><small>§</small></a></li>
+<li><a href="index.html#chapter-two"><span>第二章：无界视界与智能计算</span><small>§</small></a></li>
+<li><a href="index.html#editions"><span>第三章：精选订阅读本方案</span><small>§</small></a></li>
+<li><a href="index.html#reviews"><span>第四章：真实读者体验专栏</span><small>§</small></a></li>
+<li><a href="index.html#inquiries"><span>第五章：读者来信与答客问</span><small>§</small></a></li>
+<li><a href="chronicles.html"><span>特辑专栏深度文汇</span><small>§</small></a></li>
+</ul>
+<div class="editorial-mobile-actions">
+<a class="edit-btn edit-btn-outline" href="index.html">返回特辑</a>
+<a class="edit-btn edit-btn-terracotta" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">订购全卷服务</a>
+</div>
+</div>
+</div>
+</header>
+<main class="editorial-page-sheet">
+<div class="editorial-container">
+<div class="editorial-sheet-container">
+<div style="font-size: 13.5px; color: var(--ink-muted); margin-bottom: 20px;">
+<a href="index.html" style="color: var(--terracotta); text-decoration: none;">特辑首页</a> <span>/</span>
+<a href="chronicles.html" style="color: var(--terracotta); text-decoration: none;">特辑专栏</a> <span>/</span>
+<span>正文</span>
+</div>
+<div class="sheet-header-box">
+<h1 class="sheet-title">旅居者怎样使用旅行路由器：酒店认证、设备共享与离店恢复步骤</h1>
+<div class="sheet-meta">编撰：Runway 编辑部 · 刊印日期：2026年11月10日 · 阅读时长：约 5 分钟</div>
+</div>
+<div class="sheet-body"><div data-swc-article-body="2026-11-16"><h2>旅行路由器是管理工具而非万能护盾</h2><p>把手机、电脑和平板接到自己的旅行路由器，可以减少每次更换住宿时逐台配置的工作，但它仍要使用酒店或其他上游网络。设备名称里有安全或旅行，不代表自动获得所有保护。开始前应确认场所允许这种接入方式，了解设备支持的模式和自己需要维护的设置，不把它当成绕过收费或设备限制的工具。</p><h2>出发前先在熟悉环境完成准备</h2><p>记录型号、固件版本与管理入口，设置独立且足够强的管理口令和无线口令，两者用途不同。按厂商说明更新受支持版本并保存必要配置。电脑和手机都测试能进入自己的无线网络，重要任务在出发前验证。不要等到酒店深夜才第一次打开管理界面，同时还要解决工作截止时间。</p><h2>第一步确认酒店实际接入方式</h2><p>向工作人员核对热点名称、认证规则、允许设备数量及是否支持有线路由接入。提供网口不一定意味着随便插入就能上网，公共无线也可能需要门户认证。先了解规则再连接，避免不断尝试错误模式。需要额外登记时使用场所正式流程，不复制他人的设备身份来规避限制。</p><h2>第二步区分上游与自己的无线</h2><p>旅行路由器连接酒店网络的一侧是上游，自己的设备连接路由器的一侧是本地网络。两边名称与密码应能清楚辨认，不要给自己的热点起与酒店完全相同的名称。记录电脑当前连的是哪一个，排查时才能知道是否经过路由器。直接连酒店成功，并不自动证明路由器这一层已经配置正确。</p><h2>第三步按设备文档设置中继</h2><p>以GL.iNet当前文档为例，使用Repeater相关入口选择上游热点并加入，门户网络还需要完成相应认证流程。不同固件与型号的界面可能变化，应按自己的版本核对。先只连接一台管理设备验证，不急着把全家设备全部加入。基础接入正常后，再逐步增加其他设备，观察是否符合场所规则。</p><h2>认证页打不开时先缩小问题范围</h2><p>确认路由器已经连接正确上游，查看是否显示互联网不可用的提示，再按厂商门户连接指引处理。不要把浏览器证书警告简单忽略，也不要安装酒店以外来历不明的配置。需要场所协助时提供设备型号与认证现象，不公开管理口令。若仍无法正常接入，使用已验证的备用方式完成必要任务。</p><h2>第四步检查管理入口与共享范围</h2><p>确认管理界面只在自己预期的范围内开放，避免无必要的远程管理或公开共享。访客网络、设备隔离等能力依型号和版本而定，设置后要用实际设备验证，不能只看开关名称。家庭打印或投屏需要设备发现时，也要理解隔离可能影响这些功能，安全边界与便利需求应明确安排。</p><h2>第五步确认每台设备的任务可用</h2><p>电脑能开网页后，再测试手机通信、平板资料和需要的工作应用。某些应用对额外网络层或会话变化有不同反应，不能用一次浏览器成功覆盖全部设备。记录失效的是哪个应用与哪台设备，先保持其他条件不变。遇到单位系统限制时由管理员确认，不因路由器提供功能就自行改变企业接入要求。</p><h2>隧道配置需要另做一次验收</h2><p>若路由器支持并获准使用额外连接方案，可参考<a href="https://dajichang.mom/">旅行路由机场配置比较</a>整理协议与设备条件，再按服务和固件文档配置。酒店门户认证与隧道连接是两步，后者不能代替前者。还要确认哪些流量被接管、断线时怎样处理，不能只看到图标就宣称所有设备都具有同一种保护。</p><h2>移动与断电恢复要提前试过</h2><p>在可控时间正常重启旅行路由器，观察设备是否自动回到自己的无线、上游是否需要重新认证。记录恢复顺序和大致等待，不要求家人记住复杂参数。供电线与适配器按设备要求准备，临时电源不稳定也可能造成反复掉线。恢复能力来自整套设备与接入配合，不只取决于远端线路。</p><h2>离店前清理不再需要的接入信息</h2><p>确认工作已保存，正常结束共享与连接，按设备设置移除或停用不再使用的酒店网络自动连接。自己的无线口令若曾交给临时同行者，可按需要更新并通知仍需使用的人。保存必要的故障记录，不把酒店账号、房间资料和私人凭据混入公开旅行笔记。每次离开都收尾，下一站才容易保持清楚状态。</p><h2>保留一个无需路由器的备用流程</h2><p>至少一台设备应知道如何通过正常方式直接使用自己的移动网络或场所接入，避免路由器出问题就全部失联。备用也要满足授权与流量条件。旅行路由器的价值，是让多设备接入更易管理和恢复；明确上游、认证、共享与隧道各自的边界，才能把便携硬件变成可靠工具，而不是新的排障负担。</p></div></div>
+<div class="editorial-author-colophon">
+<div>
+<strong>Runway 编委会与网络工程研究组</strong>
+<p style="font-size: 13px; color: var(--ink-muted); margin: 4px 0 0;">深耕人文网络契约、跨国专线工程与纯净学术通路</p>
+</div>
+<a class="chronicle-read-link" href="chronicles.html">← 返回特辑专栏文汇</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="editorial-colophon">
+<div class="editorial-container">
+<nav class="colophon-index-nav">
+<a href="sitemap.html">网站地图</a>
+<a href="about.html">关于我们</a>
+<a href="terms.html">服务条款</a>
+<a href="privacy.html">隐私政策</a>
+</nav>
+<div class="colophon-imprint">
+        © 2026 Runway Journal &amp; Network Guild. 出版专有 · 保留所有权利。
       </div>
-
-      <div class="editorial-mobile-panel" id="editorialMobilePanel">
-        <ul class="editorial-mobile-links">
-          <li><a href="index.html#chapter-one"><span>第一章：真正稳定的连接</span><small>§</small></a></li>
-          <li><a href="index.html#chapter-two"><span>第二章：无界视界与智能计算</span><small>§</small></a></li>
-          <li><a href="index.html#editions"><span>第三章：精选订阅读本方案</span><small>§</small></a></li>
-          <li><a href="index.html#reviews"><span>第四章：真实读者体验专栏</span><small>§</small></a></li>
-          <li><a href="index.html#inquiries"><span>第五章：读者来信与答客问</span><small>§</small></a></li>
-          <li><a href="chronicles.html"><span>特辑专栏深度文汇</span><small>§</small></a></li>
-        </ul>
-        <div class="editorial-mobile-actions">
-          <a href="index.html" class="edit-btn edit-btn-outline">返回特辑</a>
-          <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" target="_blank" rel="nofollow" class="edit-btn edit-btn-terracotta">订购全卷服务</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="editorial-page-sheet">
-    <div class="editorial-container">
-      <div class="editorial-sheet-container">
-        
-        <div style="font-size: 13.5px; color: var(--ink-muted); margin-bottom: 20px;">
-          <a href="index.html" style="color: var(--terracotta); text-decoration: none;">特辑首页</a> <span>/</span> 
-          <a href="chronicles.html" style="color: var(--terracotta); text-decoration: none;">特辑专栏</a> <span>/</span> 
-          <span>正文</span>
-        </div>
-
-        <div class="sheet-header-box">
-          <h1 class="sheet-title">换手机、重装系统之后：客户端与账号的恢复清单</h1>
-          <div class="sheet-meta">编撰：Runway 编辑部 · 刊印日期：2026年11月10日 · 阅读时长：约 5 分钟</div>
-        </div>
-
-        <div class="sheet-body">
-<p>换新设备本是件开心的事，但如果准备不足，往往会遇到验证码收不到、配置丢失等麻烦。</p>
-<h2>换设备之前</h2>
-<ul><li>确认两步验证的备份方式，例如恢复码。</li><li>导出或记录客户端配置与常用规则。</li><li>在旧设备上先退出账号，释放设备名额。</li></ul>
-<h2>换设备之后</h2>
-<h3>1. 先装好密码管理器</h3>
-<p>恢复各个账号的登录，比逐个找密码更安全。</p>
-<h3>2. 重新导入客户端配置</h3>
-<p>安装客户端，导入配置，选择常用节点，并测试是否可用。</p>
-<h3>3. 重新设置两步验证</h3>
-<p>确保新设备上的验证器应用已绑定各账号。</p>
-<h2>需要注意的地方</h2>
-<p>部分服务限制同时在线设备数，旧设备若未退出，可能占着名额。必要时联系客服重置。</p>
-<h2>小结</h2>
-<p>把换设备当成一次小型的“迁移项目”，提前列清单，事后逐项核对，就不会手忙脚乱。</p>
-      </div>
-
-        <div class="editorial-author-colophon">
-          <div>
-            <strong>Runway 编委会与网络工程研究组</strong>
-            <p style="font-size: 13px; color: var(--ink-muted); margin: 4px 0 0;">深耕人文网络契约、跨国专线工程与纯净学术通路</p>
-          </div>
-          <a href="chronicles.html" class="chronicle-read-link">&larr; 返回特辑专栏文汇</a>
-        </div>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="editorial-colophon">
-    <div class="editorial-container">
-      <nav class="colophon-index-nav">
-        <a href="sitemap.html">网站地图</a>
-        <a href="about.html">关于我们</a>
-        <a href="terms.html">服务条款</a>
-        <a href="privacy.html">隐私政策</a>
-      </nav>
-      <div class="colophon-imprint">
-        &copy; 2026 Runway Journal & Network Guild. 出版专有 · 保留所有权利。
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</footer>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       var toggle = document.getElementById('editorialMenuToggle');
       var panel = document.getElementById('editorialMobilePanel');
@@ -185,6 +153,5 @@
       }
     });
   </script>
-
 </body>
 </html>

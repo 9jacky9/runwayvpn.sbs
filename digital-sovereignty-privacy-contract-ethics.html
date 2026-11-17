@@ -1,161 +1,130 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>购买前读懂服务条款与隐私政策：该看哪几条 - 特辑专栏</title>
-  <meta name="description" content="服务条款和隐私政策篇幅很长，很少有人认真读完。整理出购买加速服务前最值得核对的几条：退款、记录范围、使用限制与账号处理。">
-  <meta name="keywords" content="数字主权, 隐私伦理, 端到端加密, 零知识架构, 数据自由, 科学上网, 梯子选型">
-  <link rel="canonical" href="https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html">
-  
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Runway">
-  <meta property="og:title" content="购买前读懂服务条款与隐私政策：该看哪几条 - 特辑专栏">
-  <meta property="og:description" content="服务条款和隐私政策篇幅很长，很少有人认真读完。整理出购买加速服务前最值得核对的几条：退款、记录范围、使用限制与账号处理。">
-  <meta property="og:url" content="https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html">
-  <meta property="og:image" content="https://runwayvpn.sbs/og-preview.jpg">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Runway 特辑主页",
-        "item": "https://runwayvpn.sbs/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "特辑专栏",
-        "item": "https://runwayvpn.sbs/chronicles.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "数字主权与隐私伦理",
-        "item": "https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html"
-      }
-    ]
-  }
-  </script>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查</title>
+<meta content="端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查，提供完整准备、操作核验和问题判断方法，让连接服务回到具体工作需求。" name="description"/>
+<meta content="数字主权, 隐私伦理, 端到端加密, 零知识架构, 数据自由, 科学上网, 梯子选型" name="keywords"/>
+<link href="https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Runway" property="og:site_name"/>
+<meta content="端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查" property="og:title"/>
+<meta content="端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查，提供完整准备、操作核验和问题判断方法，让连接服务回到具体工作需求。" property="og:description"/>
+<meta content="https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html" property="og:url"/>
+<meta content="https://runwayvpn.sbs/og-preview.jpg" property="og:image"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Runway 特辑主页",
+      "item": "https://runwayvpn.sbs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "特辑专栏",
+      "item": "https://runwayvpn.sbs/chronicles.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查",
+      "item": "https://runwayvpn.sbs/digital-sovereignty-privacy-contract-ethics.html"
+    }
+  ]
+}</script>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- 人文杂志报头 -->
-  <header class="editorial-masthead">
-    <div class="editorial-container">
-      <div class="masthead-topbar">
-        <a href="index.html" class="masthead-logo" aria-label="Runway 首页">
-          <svg viewBox="0 0 220 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21" cy="21" r="18" stroke="#8C3A27" stroke-width="2" stroke-dasharray="2 2"/>
-            <circle cx="21" cy="21" r="14" fill="#8C3A27"/>
-            <path d="M21 11V16M21 26V31M11 21H16M26 21H31" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="21" cy="21" r="2.5" fill="#FFFFFF"/>
-            <text x="50" y="30" font-family="Georgia, -apple-system, serif" font-size="25" font-weight="800" letter-spacing="3" fill="#1F2421">RUNWAY</text>
-            <text x="176" y="22" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#8C3A27">EST.2021</text>
-          </svg>
-        </a>
-
-        <!-- 桌面端杂志排版导航菜单 -->
-        <nav class="editorial-nav" aria-label="特辑篇章导航">
-          <a href="index.html#chapter-one">专线工程</a>
-          <a href="index.html#chapter-two">视界赋能</a>
-          <a href="index.html#editions">订阅读本</a>
-          <a href="index.html#reviews">读者专栏</a>
-          <a href="index.html#inquiries">答客问</a>
-          <a href="chronicles.html" style="color: var(--terracotta);">特辑专栏</a>
-        </nav>
-
-        <div class="masthead-actions">
-          <a href="index.html" class="edit-btn edit-btn-outline">返回特辑</a>
-          <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" target="_blank" rel="nofollow" class="edit-btn edit-btn-terracotta">订购全卷</a>
-        </div>
-
-        <button class="editorial-menu-toggle" id="editorialMenuToggle" aria-label="切换导航菜单" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+<!-- 人文杂志报头 -->
+<header class="editorial-masthead">
+<div class="editorial-container">
+<div class="masthead-topbar">
+<a aria-label="Runway 首页" class="masthead-logo" href="index.html">
+<svg fill="none" viewbox="0 0 220 42" xmlns="http://www.w3.org/2000/svg">
+<circle cx="21" cy="21" r="18" stroke="#8C3A27" stroke-dasharray="2 2" stroke-width="2"></circle>
+<circle cx="21" cy="21" fill="#8C3A27" r="14"></circle>
+<path d="M21 11V16M21 26V31M11 21H16M26 21H31" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5"></path>
+<circle cx="21" cy="21" fill="#FFFFFF" r="2.5"></circle>
+<text fill="#1F2421" font-family="Georgia, -apple-system, serif" font-size="25" font-weight="800" letter-spacing="3" x="50" y="30">RUNWAY</text>
+<text fill="#8C3A27" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="1" x="176" y="22">EST.2021</text>
+</svg>
+</a>
+<!-- 桌面端杂志排版导航菜单 -->
+<nav aria-label="特辑篇章导航" class="editorial-nav">
+<a href="index.html#chapter-one">专线工程</a>
+<a href="index.html#chapter-two">视界赋能</a>
+<a href="index.html#editions">订阅读本</a>
+<a href="index.html#reviews">读者专栏</a>
+<a href="index.html#inquiries">答客问</a>
+<a href="chronicles.html" style="color: var(--terracotta);">特辑专栏</a>
+</nav>
+<div class="masthead-actions">
+<a class="edit-btn edit-btn-outline" href="index.html">返回特辑</a>
+<a class="edit-btn edit-btn-terracotta" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">订购全卷</a>
+</div>
+<button aria-expanded="false" aria-label="切换导航菜单" class="editorial-menu-toggle" id="editorialMenuToggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="editorial-mobile-panel" id="editorialMobilePanel">
+<ul class="editorial-mobile-links">
+<li><a href="index.html#chapter-one"><span>第一章：真正稳定的连接</span><small>§</small></a></li>
+<li><a href="index.html#chapter-two"><span>第二章：无界视界与智能计算</span><small>§</small></a></li>
+<li><a href="index.html#editions"><span>第三章：精选订阅读本方案</span><small>§</small></a></li>
+<li><a href="index.html#reviews"><span>第四章：真实读者体验专栏</span><small>§</small></a></li>
+<li><a href="index.html#inquiries"><span>第五章：读者来信与答客问</span><small>§</small></a></li>
+<li><a href="chronicles.html"><span>特辑专栏深度文汇</span><small>§</small></a></li>
+</ul>
+<div class="editorial-mobile-actions">
+<a class="edit-btn edit-btn-outline" href="index.html">返回特辑</a>
+<a class="edit-btn edit-btn-terracotta" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">订购全卷服务</a>
+</div>
+</div>
+</div>
+</header>
+<main class="editorial-page-sheet">
+<div class="editorial-container">
+<div class="editorial-sheet-container">
+<div style="font-size: 13.5px; color: var(--ink-muted); margin-bottom: 20px;">
+<a href="index.html" style="color: var(--terracotta); text-decoration: none;">特辑首页</a> <span>/</span>
+<a href="chronicles.html" style="color: var(--terracotta); text-decoration: none;">特辑专栏</a> <span>/</span>
+<span>正文</span>
+</div>
+<div class="sheet-header-box">
+<h1 class="sheet-title">端到端加密为何仍要核对收件人：隐私设置、备份与分享前的六项检查</h1>
+<div class="sheet-meta">编撰：Runway 编辑部 · 刊印日期：2026年11月13日 · 阅读时长：约 5 分钟</div>
+</div>
+<div class="sheet-body"><div data-swc-article-body="2026-11-16"><h2>加密保护不了发给错误的人</h2><p>端到端加密的目标，是让内容在指定通信端点之间得到保护。但如果收件人选错、设备已经被他人使用，或者内容被对方主动转发，加密并不能把这些行为自动撤回。讨论数字隐私时，应先识别谁会接触资料，再看技术如何保护传输。只强调算法名称，容易忽略真正发生在日常操作里的泄露。</p><h2>第一项检查资料是否需要发送</h2><p>先说明发送目的，区分完成任务必需的信息和顺手附带的细节。客户问题可能只需要订单编号与错误时间，不一定需要完整证件或全部聊天记录。发送前删去无关部分，保留对方能够处理问题的最小内容。减少不必要的数据，本身就能降低后续误用与扩散的机会，不必等到复杂工具部署后才开始。</p><h2>第二项确认收件人身份与范围</h2><p>核对联系人、群成员和组织名称，不只看头像与显示名。多人群聊新增成员后，原来适合私聊的资料可能不再适合继续发送。需要敏感交流时，通过已经可信的渠道确认对方，而不是让同一个可疑聊天窗口证明自己。端到端保护覆盖的是选定端点，不会替用户决定该端点是否应该收到资料。</p><h2>安全号码有用但不能代替身份核验</h2><p>Signal提供一对一聊天安全号码核对机制，用于检查与特定联系人的通信安全状态，其官方说明也明确它不直接验证任何人的现实身份。号码变化可能与设备更换等正常情况有关，但意外变化应先确认。理解工具证明什么，才能正确使用；不能把一个验证标记解读成对方所有身份与业务承诺都已可信。</p><h2>第三项检查设备与通知展示</h2><p>即使内容在传输途中加密，锁屏通知、桌面弹窗和共享屏幕仍可能显示文字。按设备和应用当前设置调整预览范围，重要会议前关闭无关通知。借用设备时不要留下长期登录，离开时正常退出。隐私不只存在于网络线路，还存在于眼前的屏幕、保存位置和能够接触设备的人。</p><h2>第四项核对备份与跨设备同步</h2><p>聊天、照片和附件可能进入另一套备份或同步系统，其保护方式与原应用不一定相同。查看是否启用备份、保存到哪里、谁能访问以及恢复需要什么条件。不能因为聊天支持端到端加密，就自动推断所有导出文件与云端副本同样受保护。备份有助于恢复，也带来需要单独管理的资料范围。</p><h2>第五项阅读实际隐私说明</h2><p>将内容、账户信息、设备信息、连接记录和支付资料分开看，确认哪些被收集、用于什么目的以及保留范围。没有说明的项保持待核，不用一句不看聊天补全成不保存任何数据。技术介绍与服务政策分别提供不同信息，前者描述机制，后者说明运营行为，两者需要相互对应才有意义。</p><h2>把分享权限当作持续管理的状态</h2><p>文档链接可以是公开、组织内或指定人员可访问，发送者应在分享前确认实际范围。任务完成后按需要收回权限，成员离开时重新核对。撤销链接并不保证别人已经保存的副本消失，因此敏感内容在第一次发送前就应谨慎。权限是一个持续维护过程，不是点击共享时的一次选择。</p><h2>第六项约定内容的后续使用</h2><p>合作开始时明确资料用于什么、能否转交、保存多久和结束后如何处理。普通工作说明应清楚具体，不用一大段无人阅读的文字代替沟通。涉及正式合同或特定行业要求时，由相应负责人核对完整条件。本文的检查表帮助整理问题，不能替双方自动建立所有法律或保密义务。</p><h2>连接服务是其中一层工具</h2><p>需要额外网络方案时，可用<a href="https://dajichang.mom/">隐私连接机场服务比较</a>整理候选并核对政策，但隧道加密与应用端到端加密具有不同终点。它不能替你筛选收件人、限制截图或管理云盘公开链接。把工具放回明确的保护范围，能够避免为了一个网络产品忽视其他更直接的资料管理问题。</p><h2>发生误发时先控制进一步扩散</h2><p>尽快通知正确负责人，按应用能力撤回或收回访问，并确认接收范围。不要把界面显示撤回当作所有副本都已经消失，也不要在公开群里重复贴出敏感内容求助。记录发生时间、资料类别与已采取措施，按组织流程继续处理。及时而清楚的响应，通常比争论当初使用了什么加密名称更重要。</p><h2>让隐私成为容易执行的习惯</h2><p>发送前问六个问题：是否必要、对象正确吗、屏幕会暴露吗、副本在哪里、政策说明什么、后续用途是否明确。每项都有可执行动作，就不必依赖抽象的绝对安全承诺。技术能够提供强有力的保护，但只有与人员、设备和资料流程配合，才能让读者真正掌握自己信息的去向。</p></div></div>
+<div class="editorial-author-colophon">
+<div>
+<strong>Runway 编委会与网络工程研究组</strong>
+<p style="font-size: 13px; color: var(--ink-muted); margin: 4px 0 0;">深耕人文网络契约、跨国专线工程与纯净学术通路</p>
+</div>
+<a class="chronicle-read-link" href="chronicles.html">← 返回特辑专栏文汇</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="editorial-colophon">
+<div class="editorial-container">
+<nav class="colophon-index-nav">
+<a href="sitemap.html">网站地图</a>
+<a href="about.html">关于我们</a>
+<a href="terms.html">服务条款</a>
+<a href="privacy.html">隐私政策</a>
+</nav>
+<div class="colophon-imprint">
+        © 2026 Runway Journal &amp; Network Guild. 出版专有 · 保留所有权利。
       </div>
-
-      <div class="editorial-mobile-panel" id="editorialMobilePanel">
-        <ul class="editorial-mobile-links">
-          <li><a href="index.html#chapter-one"><span>第一章：真正稳定的连接</span><small>§</small></a></li>
-          <li><a href="index.html#chapter-two"><span>第二章：无界视界与智能计算</span><small>§</small></a></li>
-          <li><a href="index.html#editions"><span>第三章：精选订阅读本方案</span><small>§</small></a></li>
-          <li><a href="index.html#reviews"><span>第四章：真实读者体验专栏</span><small>§</small></a></li>
-          <li><a href="index.html#inquiries"><span>第五章：读者来信与答客问</span><small>§</small></a></li>
-          <li><a href="chronicles.html"><span>特辑专栏深度文汇</span><small>§</small></a></li>
-        </ul>
-        <div class="editorial-mobile-actions">
-          <a href="index.html" class="edit-btn edit-btn-outline">返回特辑</a>
-          <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" target="_blank" rel="nofollow" class="edit-btn edit-btn-terracotta">订购全卷服务</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="editorial-page-sheet">
-    <div class="editorial-container">
-      <div class="editorial-sheet-container">
-        
-        <div style="font-size: 13.5px; color: var(--ink-muted); margin-bottom: 20px;">
-          <a href="index.html" style="color: var(--terracotta); text-decoration: none;">特辑首页</a> <span>/</span> 
-          <a href="chronicles.html" style="color: var(--terracotta); text-decoration: none;">特辑专栏</a> <span>/</span> 
-          <span>正文</span>
-        </div>
-
-        <div class="sheet-header-box">
-          <h1 class="sheet-title">购买前读懂服务条款与隐私政策：该看哪几条</h1>
-          <div class="sheet-meta">编撰：Runway 编辑部 · 刊印日期：2026年11月13日 · 阅读时长：约 5 分钟</div>
-        </div>
-
-        <div class="sheet-body">
-<p>条款常常又长又枯燥，但有几类内容直接关系到你的权益，值得花几分钟看一看。</p>
-<h2>一、退款与取消</h2>
-<p>是否支持试用，退款在什么条件下处理，到期是否自动续费。这些决定了你的风险有多大。</p>
-<h2>二、数据与记录范围</h2>
-<p>服务商会收集哪些信息、保存多久、是否与第三方共享。看这一条，你就大概知道它对隐私的态度。</p>
-<h2>三、使用限制</h2>
-<ul><li>是否限制同时在线设备数。</li><li>是否禁止某些用途，比如大规模下载。</li><li>超出限制会怎样处理。</li></ul>
-<h2>四、账号与服务调整</h2>
-<p>服务商是否保留调整节点、套餐的权利，有变动时是否通知用户。</p>
-<h2>五、条款里缺少什么也要注意</h2>
-<p>如果找不到隐私政策或退款说明，或者表述含糊，这本身就是一个信号。</p>
-<h2>小结</h2>
-<p>花五分钟读这四类条款，比事后争议要省事得多。</p>
-      </div>
-
-        <div class="editorial-author-colophon">
-          <div>
-            <strong>Runway 编委会与网络工程研究组</strong>
-            <p style="font-size: 13px; color: var(--ink-muted); margin: 4px 0 0;">深耕人文网络契约、跨国专线工程与纯净学术通路</p>
-          </div>
-          <a href="chronicles.html" class="chronicle-read-link">&larr; 返回特辑专栏文汇</a>
-        </div>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="editorial-colophon">
-    <div class="editorial-container">
-      <nav class="colophon-index-nav">
-        <a href="sitemap.html">网站地图</a>
-        <a href="about.html">关于我们</a>
-        <a href="terms.html">服务条款</a>
-        <a href="privacy.html">隐私政策</a>
-      </nav>
-      <div class="colophon-imprint">
-        &copy; 2026 Runway Journal & Network Guild. 出版专有 · 保留所有权利。
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</footer>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       var toggle = document.getElementById('editorialMenuToggle');
       var panel = document.getElementById('editorialMobilePanel');
@@ -184,6 +153,5 @@
       }
     });
   </script>
-
 </body>
 </html>
